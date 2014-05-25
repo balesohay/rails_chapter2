@@ -2,7 +2,6 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 #TODO REMOVE this for rails 4.1
-config.secret_key_base = YAML.load(File.open("#{Rails.root}/config/secrets.yml"))
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

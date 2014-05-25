@@ -4,7 +4,7 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.5'
+gem 'rails', '4.1.1'
 
 # Use sqlite3 as the database for Active Record
 group :development do
@@ -24,7 +24,7 @@ gem 'coffee-rails', '4.0.1'
 # gem 'therubyracer',  platforms: :ruby
 
 #add in railties gem
-gem 'railties', '~> 4.0.5'
+gem 'railties', '4.1.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '3.0.4'

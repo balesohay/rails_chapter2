@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @fadmin.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @fadmin.password %>
+</p>
+
+<%= link_to 'Edit', edit_fadmin_path(@fadmin) %> |
+<%= link_to 'Back', fadmins_path %>

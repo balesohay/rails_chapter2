@@ -11,8 +11,20 @@ group :development do
      gem 'sqlite3','1.3.8'
 end
 
+#set up email development
+gem 'activesupport','4.1.1'
+gem 'actionmailer', '~> 4.1.1'
+gem 'actionpack', '4.1.1'
+gem 'actionview', '4.1.1'
+gem 'mail'
+gem 'postmark-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.1'
+
+# trying out devise gem for admin rights
+#gem 'devise'
+#gem 'b-crypt', '~> 3.1.7'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
@@ -24,6 +36,7 @@ gem 'coffee-rails', '4.0.1'
 # gem 'therubyracer',  platforms: :ruby
 
 #add in railties gem
+#gem 'railties', '4.0.5'
 gem 'railties', '4.1.1'
 
 # Use jquery as the JavaScript library

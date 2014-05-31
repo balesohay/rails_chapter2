@@ -1,0 +1,29 @@
+<h1>Listing who_is</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @who_is.each do |who_i| %>
+      <tr>
+        <td><%= who_i.username %></td>
+        <td><%= who_i.password %></td>
+        <td><%= link_to 'Show', who_i %></td>
+        <td><%= link_to 'Edit', edit_who_i_path(who_i) %></td>
+        <td><%= link_to 'Destroy', who_i, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Who i', new_who_i_path %>

@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
+#Rails.application.routes.draw do |admins|
+  resources :admins
+
+  resources :fadmins
+
+  resources :who_is
+
   resources :bloggers
 
-  resources :microposts
-
+  namespace :admins do
+    resources :microposts
+  end
+  #admins.resources :microposts
+  
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,9 +1,12 @@
-class MicropostsController < ApplicationController
-  before_action :set_micropost, only: [:show, :edit, :update, :destroy]
+class Admins::MicropostsController < Admins::AdminsController
+  
+
+  #before_action :set_micropost, only: [:show, :edit, :update, :destroy]
 
   # GET /microposts
   # GET /microposts.json
   def index
+    @admin = Admins.first
     @microposts = Micropost.all
   end
 

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @who_i.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @who_i.password %>
+</p>
+
+<%= link_to 'Edit', edit_who_i_path(@who_i) %> |
+<%= link_to 'Back', who_is_path %>

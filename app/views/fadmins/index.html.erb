@@ -1,0 +1,29 @@
+<h1>Listing fadmins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fadmins.each do |fadmin| %>
+      <tr>
+        <td><%= fadmin.username %></td>
+        <td><%= fadmin.password %></td>
+        <td><%= link_to 'Show', fadmin %></td>
+        <td><%= link_to 'Edit', edit_fadmin_path(fadmin) %></td>
+        <td><%= link_to 'Destroy', fadmin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fadmin', new_fadmin_path %>
